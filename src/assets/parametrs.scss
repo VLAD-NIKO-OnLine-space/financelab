@@ -1,0 +1,17 @@
+
+:root{
+    --bg-color: #090d28;
+    --card-color: #181b3a;
+    --text-color: #fff;
+    --card-color-hover: #23285a;
+    --card-item-color-hover: #090e2ab3;
+    --all-text-color: #ffd700;
+}
+
+
+$cardItemColorHover: var(--card-item-color-hover);
+$cardColorHover: var(--card-color-hover);
+$bgColor: var(--bg-color);
+$cardColor: var(--card-color);
+$textColor: var(--text-color);
+$allTextColor: var(--all-text-color) 

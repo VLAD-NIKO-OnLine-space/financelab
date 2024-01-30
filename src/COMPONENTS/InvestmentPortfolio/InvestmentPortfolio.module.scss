@@ -1,0 +1,57 @@
+@import '../../assets/parametrs.scss';
+
+.main{
+    background-color: $cardColor;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    max-height: 260px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px;
+        background-color: $cardColorHover;
+    }
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 900;
+    font-style: bold;
+}
+
+.wrapper{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 12px;
+    align-items: center;
+    transition: 0.1s all ease;
+    &:hover{
+        background-color: $cardItemColorHover;
+    }
+}
+
+.icon{
+    width: 35px;
+    height: auto;
+    pointer-events: none;
+    margin-right: 10px;
+}
+
+.priceName{
+    font-size: 16px;
+    margin-bottom: 1px;
+    text-transform:capitalize;
+}
+.price{
+    font-size: 12px;
+    opacity: 0.8;
+    span{
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,187 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "password": "1",
+      "userName": "Vlad",
+      "activGoal": 1000000
+    },
+    {
+      "id": 2,
+      "password": "2",
+      "userName": "2",
+      "activGoal": 2
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": "2023"
+    },
+    {
+      "id": 2,
+      "userName": "Vlad",
+      "month": "декабрь",
+      "year": "2023"
+    }
+  ],
+  "yearsReports": [
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "year": 2022,
+      "allActiveIncomes": 320000,
+      "allPassiveIncomes": 600,
+      "allCrypto": 10
+    },
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "year": 2023,
+      "allActiveIncomes": 650000,
+      "allPassiveIncomes": 12000,
+      "allCrypto": 123
+    }
+  ],
+  "assets": [
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": "2023",
+      "crypto": 840,
+      "stocks": 650080,
+      "wallet": 1000
+    },
+    {
+      "id": 2,
+      "userName": "Vlad",
+      "month": "декабрь",
+      "year": "2023",
+      "crypto": 849,
+      "stocks": 643000,
+      "wallet": 1000
+    }
+  ],
+  "cryptoAttachments": [
+    10,
+    20
+  ],
+  "stocksAttachments": [
+    1000,
+    2000,
+    3000
+  ],
+  "walletAttachments": [
+    500
+  ],
+  "debts": [
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": 2023,
+      "ипотека": 550000,
+      "кредит": 300000,
+      "животные": 1000,
+      "Интернет": 1000
+    },
+    {
+      "id": 2,
+      "userName": "Vlad",
+      "month": "декабрь",
+      "year": 2023,
+      "интернет": 1000,
+      "оплата": 2,
+      "что-то еще": 100
+    }
+  ],
+  "income": [
+    {
+      "salary": 40000
+    },
+    {
+      "dividends": 25000
+    }
+  ],
+  "expenses": [
+    {
+      "apartaments": 10000
+    },
+    {
+      "credit": 9000
+    }
+  ],
+  "ActiveIncomes": [
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": 2023,
+      "incomeName": "Зарплата",
+      "incomePrice": 20000
+    },
+    {
+      "id": 2,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": 2023,
+      "incomeName": "Аванс",
+      "incomePrice": 8000
+    },
+    {
+      "id": 3,
+      "userName": "Vlad",
+      "month": "декабрь",
+      "year": 2023,
+      "incomeName": "Что-то еще",
+      "incomePrice": 1000
+    }
+  ],
+  "PassiveIncomes": [
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": 2023,
+      "incomeName": "Дивиденды",
+      "incomePrice": 500
+    },
+    {
+      "id": 2,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": 2023,
+      "incomeName": "Дивиденды",
+      "incomePrice": 1500
+    },
+    {
+      "userName": "Vlad",
+      "year": "2023",
+      "month": "ноябрь",
+      "incomeName": "Дивиденды",
+      "incomePrice": "341",
+      "id": 3
+    }
+  ],
+  "expenditure": [
+    {
+      "id": 1,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": 2023,
+      "expenditureName": "Комуналка",
+      "expenditurePrice": 4500
+    },
+    {
+      "id": 2,
+      "userName": "Vlad",
+      "month": "ноябрь",
+      "year": 2023,
+      "expenditureName": "Корм котам",
+      "expenditurePrice": 2100
+    }
+  ]
+}

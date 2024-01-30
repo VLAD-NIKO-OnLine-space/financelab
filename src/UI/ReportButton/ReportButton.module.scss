@@ -1,0 +1,35 @@
+@import '../../assets/parametrs.scss';
+
+.ReportButton{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 15px;
+    background-color: transparent;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px 12px 12px 0;
+    cursor: pointer;
+    letter-spacing: 0.09em;
+    color: $textColor;
+    text-transform: capitalize;
+    font-style: bold;
+    font-weight: 500;
+    background-size: 200%;
+    transition: 0.3s all linear;
+    &:hover{
+        background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+        background-size: 200%;
+        span{
+            background-color: #12c2e9;
+        }
+    }
+    span{
+        height: 100%;
+        width: 1px;
+        background-color: #e63f54;
+    }
+    .icon{
+        width: 35px;
+    }
+}

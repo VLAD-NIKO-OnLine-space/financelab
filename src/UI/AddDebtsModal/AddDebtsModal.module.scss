@@ -1,0 +1,15 @@
+
+
+
+.main{
+    position: absolute;
+    width: 100px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    right: -120px;
+}
+
+.mainActive{
+    display: flex;
+}

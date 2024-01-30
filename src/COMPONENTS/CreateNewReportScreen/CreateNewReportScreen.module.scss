@@ -1,0 +1,227 @@
+@import '../../assets/parametrs.scss';
+
+.main{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(0);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+.activeMain{
+    transform: scale(100%);
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+.content{
+    background-color: $cardColor;
+    height: 90vh;
+    width: 90vw;
+    position: relative;
+    transition: 0.3s all ease;
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentActive{
+    transform: scale(100%);
+    transition: 0.3s all ease;
+    border-radius: 12px;
+    opacity: 1;
+    overflow: hidden;
+}
+.square{
+    width: 220px;
+    height: 220px;
+    background-color: #000;
+    position: absolute;
+    bottom: 15px;
+    left: -10px;
+    opacity: .1;
+    transform: rotateZ(28deg);
+    z-index: 101;
+    animation: rotation 60s infinite;
+}
+.square2{
+    width: 180px;
+    height: 180px;
+    background-color: #000;
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    opacity: .1;
+    transform: rotateZ(28deg);
+    z-index: 101;
+    animation: rotation 60s infinite;
+}
+.closeButton{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+    opacity: .6;
+    &::after{
+        content: '';
+        top: 40%;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transform: rotateZ(45deg);
+        transition: 0.2s all ease;
+    }
+    &::before{
+        content: '';
+        bottom: 50%;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.2s all ease;
+        transform: rotateZ(-45deg);
+    }
+    &:hover::after{
+        transform: rotateZ(-135deg);  
+        background-color: #e64053; 
+    }
+    &:hover::before{
+        background-color: #e64053; 
+        transform: rotateZ(135deg);   
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 52px;
+
+}
+
+.btnChoiceWrapper{
+    display: flex;
+    gap: 20px;
+}
+.buttonChoise{
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: $textColor;
+    cursor: pointer;
+    background-color: #eb5831;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 0.045em;
+    transition: 0.3s all ease;
+    filter: drop-shadow(0 0 0.15rem transparent);
+    
+    &:hover{
+        filter: drop-shadow(0 0 0.55rem #eb5831);
+    }
+}
+.nonActiveButtonChoise{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: $textColor;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 0.045em;
+    border-radius: 8px;
+}
+
+.createReportButton{
+    border: none;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 32px;
+    letter-spacing: 0.045em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #e63f53;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s all ease;
+    &:hover{
+        letter-spacing: 0.1em;
+    }
+}
+.disabledCreateReportButton{
+    border: none;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 32px;
+    letter-spacing: 0.045em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: gray;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s all ease;
+}
+
+.loader {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

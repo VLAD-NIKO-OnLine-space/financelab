@@ -1,0 +1,35 @@
+
+
+
+.main{
+    display: flex;
+    padding: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 20px;
+    height: 90vh;
+    justify-content: space-between;
+}
+
+.wrapper3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 90vh;
+    
+}
+.wrapper4{
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}

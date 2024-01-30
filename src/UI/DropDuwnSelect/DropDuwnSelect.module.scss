@@ -1,0 +1,102 @@
+@import '../../assets/parametrs.scss';
+
+.DropDuwnSelect{
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 16px;
+}
+.wrapper1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.wrapper2{
+    display: flex;
+    gap: 10px;
+}
+
+
+.wrapDrop1{
+    position: relative;
+    background-color: #9acd32;
+    border-radius: 5px;
+}
+.parClick{
+    padding: 5px 10px;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    color: #181b3a;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 28px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 165px;
+    &:hover{
+        filter: drop-shadow(0 0 0.75rem #9acd32);
+    }
+}
+
+.drop1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    height: 0;
+    overflow: auto;
+    transition: all .5s ease;
+    padding: 5px 5px;
+    background-color: rgba(140, 141, 157, 1);
+    border-radius: 0 0 5px 5px;
+    z-index: -5;
+    opacity: 0;
+}
+
+.drop1On{
+    height: 170px;
+    z-index: -5;
+    padding: 30px 10px 15px 10px;
+    opacity: 1;
+    
+}
+
+.drop2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    height: 0;
+    overflow: auto;
+    transition: all .5s ease;
+    padding: 5px 4px;
+    background-color: #8c8d9d;
+    border-radius: 0 0 5px 5px;
+    z-index: -5;
+    opacity: 0;
+    width: 165px;
+}
+
+.drop2On{
+    height: 170px;
+    z-index: -5;
+    padding: 30px 3px 15px 4px;
+    opacity: 1;
+}
+
+.par{
+    opacity: .1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+}

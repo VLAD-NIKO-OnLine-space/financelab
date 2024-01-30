@@ -1,0 +1,32 @@
+@import '../../../assets/parametrs.scss';
+
+.wrapper{
+    display: flex;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 12px;
+    align-items: center;
+    transition: 0.1s all ease;
+    &:hover{ 
+        background-color: $cardItemColorHover;
+    }
+}
+
+.icon{
+    width: 35px;
+    height: auto;
+    pointer-events: none;
+    margin-right: 10px;
+}
+
+.priceWrapper{
+}
+.priceName{
+    font-size: 16px;
+    margin-bottom: 1px;
+    text-transform:capitalize;
+}
+.price{
+    font-size: 12px;
+    opacity: 0.6;
+}
